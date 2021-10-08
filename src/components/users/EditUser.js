@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
 
+
 const EditUser = () => {
   let history = useHistory();
   const { id } = useParams();
@@ -13,6 +14,7 @@ const EditUser = () => {
   });
 
   const { name, username, email, phone } = user;
+
   const onInputChange = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -31,6 +33,7 @@ const EditUser = () => {
     const result = await axios.get(`http://localhost:3004/users/${id}`);
     setUser(result.data);
   };
+
   return (
     <div className="container">
       <div className="w-75 mx-auto shadow p-5">

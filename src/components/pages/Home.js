@@ -14,6 +14,11 @@ const Home = () => {
         const result = await axios.get("http://localhost:3004/users");
         setUser(result.data.reverse())
     }
+
+    const deleteUser = async id => {
+        await axios.delete(`http://localhost:3004/users/${id}`);
+        loadUsers();
+    };
     return (
         <div className="container">
             <div className="py-4">
@@ -37,9 +42,10 @@ const Home = () => {
                                     <td>{user.username}</td>
                                     <td>{user.email}</td>
                                     <td >
-                                        <Link class="btn-view">View</Link>
+                                        <Link class="btn-view" to={`/users/${user.id}`}>View</Link>
                                         <Link class="btn-edit" to={`/users/edit/${user.id}`}>Edit</Link>
-                                        <Link class="btn btn-danger">Delete</Link>
+                                        <Link class="btn btn-danger" to={`/`}
+                                            onClick={() => deleteUser(user.id)}>Delete</Link>
                                     </td>
                                 </tr>
                             ))
