@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Leanne Graham",
+      "name": "Leanne Graham2",
       "username": "Bret",
       "email": "Sincere@april.biz",
       "address": {
@@ -232,9 +232,9 @@
     },
     {
       "name": "Balkrushna",
-      "username": "its_me.rb",
+      "username": "its_me.rbe",
       "email": "roshanshinde1717@gmail.com",
-      "phone": "09850534414",
+      "phone": "9850534414",
       "id": 11
     }
   ]
