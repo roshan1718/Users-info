@@ -24,7 +24,6 @@ function App() {
           <Route exact path="/users/edit/:id" component={EditUser} />
           <Route exact path="/users/:id" component={ViewUser} />
 
-
           <Route component={NotFound} />
 
         </Switch>
