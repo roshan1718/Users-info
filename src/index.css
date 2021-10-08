@@ -8,3 +8,30 @@
     justify-content: center;
     align-items: center;
 }
+
+.btn-view{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px ;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-edit{
+    background-color: #3e9bf1; /* Green */
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
